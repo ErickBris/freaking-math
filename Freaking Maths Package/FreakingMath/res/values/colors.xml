@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="textColor">#ffffff</color>
+    <color name="background">#19b864</color>
+    <color name="timerBack">#0090ee</color>
+        
+    
+</resources>

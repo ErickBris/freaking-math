@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlMain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvgameover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="@dimen/marginTop"
+            android:text="@string/gameOver"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/mainTextSize"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvlabellast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/last"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/otherTextSize" />
+
+            <TextView
+                android:id="@+id/last_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/mainTextSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvlabeltop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/top"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/otherTextSize" />
+
+            <TextView
+                android:id="@+id/top_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/mainTextSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/rightButtonWidth"
+            android:layout_marginTop="@dimen/padding"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bplay"
+                android:layout_width="@dimen/startButtonWidth"
+                android:layout_height="@dimen/startButtonWidth"
+                android:layout_margin="@dimen/padding"
+                android:background="@drawable/custom_button_play" />
+
+            <Button
+                android:id="@+id/bmenu"
+                android:layout_width="@dimen/startButtonWidth"
+                android:layout_height="@dimen/startButtonWidth"
+                android:layout_margin="@dimen/padding"
+                android:background="@drawable/custom_button_menu" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bshare"
+            android:layout_width="@dimen/startButtonWidth"
+            android:layout_height="@dimen/startButtonWidth"
+            android:layout_margin="@dimen/padding"
+            android:background="@drawable/custom_button_share"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_id" >
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

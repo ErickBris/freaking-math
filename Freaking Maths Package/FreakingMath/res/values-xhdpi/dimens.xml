@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="startscreenmargin">90dp</dimen>
+    <dimen name="rightButtonWidth">110dp</dimen>
+    <dimen name="startButtonWidth">80dp</dimen>
+    <dimen name="otherbuttonwidth">60dp</dimen>
+    <dimen name="mainTextSize">40sp</dimen>
+    <dimen name="equationSize">45sp</dimen>
+    <dimen name="otherTextSize">30sp</dimen>
+    <dimen name="marginTop">50dp</dimen>
+    <dimen name="marginBottom">100dp</dimen>
+    <dimen name="padding">10dp</dimen>
+
+</resources>

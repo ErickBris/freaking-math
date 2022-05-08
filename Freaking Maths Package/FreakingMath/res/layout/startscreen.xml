@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivcloud"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/displayName"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/mainTextSize" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tvname"
+        android:layout_marginTop="@dimen/marginTop"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bleaderboard"
+            android:layout_width="@dimen/otherbuttonwidth"
+            android:layout_height="@dimen/otherbuttonwidth"
+            android:layout_marginRight="@dimen/padding"
+            android:background="@drawable/custom_button_leaderboard"
+            android:onClick="clicked" />
+
+        <Button
+            android:id="@+id/bstart"
+            android:layout_width="@dimen/startButtonWidth"
+            android:layout_height="@dimen/startButtonWidth"
+            android:background="@drawable/custom_button_play"
+            android:onClick="clicked" />
+
+        <Button
+            android:id="@+id/brate"
+            android:layout_width="@dimen/otherbuttonwidth"
+            android:layout_height="@dimen/otherbuttonwidth"
+            android:layout_marginLeft="@dimen/padding"
+            android:background="@drawable/custom_button_rate"
+            android:onClick="clicked" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivcloud"
+        android:layout_width="@dimen/rightButtonWidth"
+        android:layout_height="@dimen/rightButtonWidth"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_marginRight="@dimen/padding"
+        android:layout_marginTop="@dimen/marginTop"
+        android:background="@drawable/cloud" />
+
+    <Button
+        android:id="@+id/bsound"
+        android:layout_width="@dimen/otherbuttonwidth"
+        android:layout_height="@dimen/otherbuttonwidth"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/ivcloud"
+        android:layout_marginLeft="@dimen/marginTop"
+        android:layout_marginTop="@dimen/padding"
+        android:background="@drawable/sound_on"
+        android:onClick="clicked" />
+
+</RelativeLayout>

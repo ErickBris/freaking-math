@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- here are the layout values for devices like nexus 10 -->
+
+    <dimen name="startscreenmargin">170dp</dimen>
+    <dimen name="rightButtonWidth">300dp</dimen>
+    <dimen name="startButtonWidth">200dp</dimen>
+    <dimen name="otherbuttonwidth">150dp</dimen>
+    <dimen name="mainTextSize">100sp</dimen>
+    <dimen name="equationSize">120sp</dimen>
+    <dimen name="otherTextSize">80sp</dimen>
+    <dimen name="marginTop">150dp</dimen>
+    <dimen name="marginBottom">250dp</dimen>
+    <dimen name="padding">25dp</dimen>
+
+</resources>

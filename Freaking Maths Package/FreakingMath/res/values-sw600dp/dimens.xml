@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- here are the layout values for devices like nexus 7 -->
+
+    <dimen name="startscreenmargin">100dp</dimen>
+    <dimen name="rightButtonWidth">250dp</dimen>
+    <dimen name="startButtonWidth">140dp</dimen>
+    <dimen name="otherbuttonwidth">100dp</dimen>
+    <dimen name="mainTextSize">70sp</dimen>
+    <dimen name="equationSize">80sp</dimen>
+    <dimen name="otherTextSize">60sp</dimen>
+    <dimen name="marginTop">100dp</dimen>
+    <dimen name="marginBottom">200dp</dimen>
+    <dimen name="padding">20dp</dimen>
+
+</resources>

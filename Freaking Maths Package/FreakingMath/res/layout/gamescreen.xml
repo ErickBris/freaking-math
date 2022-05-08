@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llmain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ivtimerBar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/padding" />
+
+        <TextView
+            android:id="@+id/tvhighscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:padding="@dimen/padding"
+            android:text="23"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/otherTextSize" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/first_row"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tvfirstDigit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding"
+                    android:text="1"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/equationSize" />
+
+                <TextView
+                    android:id="@+id/tvoperator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding"
+                    android:text="+"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/equationSize" />
+
+                <TextView
+                    android:id="@+id/tvsecondDigit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding"
+                    android:text="1"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/equationSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/second_row"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvequal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding"
+                    android:text="="
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/equationSize" />
+
+                <TextView
+                    android:id="@+id/tvresult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding"
+                    android:text="2"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/equationSize" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bright"
+                android:layout_width="@dimen/rightButtonWidth"
+                android:layout_height="@dimen/rightButtonWidth"
+                android:layout_marginRight="@dimen/padding"
+                android:background="@drawable/custom_button_right" />
+
+            <Button
+                android:id="@+id/bwrong"
+                android:layout_width="@dimen/rightButtonWidth"
+                android:layout_height="@dimen/rightButtonWidth"
+                android:layout_marginLeft="@dimen/padding"
+                android:background="@drawable/custom_button_wrong" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_id" >
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

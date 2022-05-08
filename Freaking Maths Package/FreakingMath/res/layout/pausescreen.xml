@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/tvtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/dialogTitle"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/otherTextSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvtitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/dialogTitle2"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/otherTextSize"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:paddingTop="@dimen/padding" >
+
+        <Button
+            android:id="@+id/bdialogyes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/marginTop"
+            android:background="@color/timerBack"
+            android:padding="@dimen/padding"
+            android:text="@string/dialogYes"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/mainTextSize" />
+
+        <Button
+            android:id="@+id/bdialogno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginTop"
+            android:background="@color/timerBack"
+            android:padding="@dimen/padding"
+            android:text="@string/dialogNo"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/mainTextSize" />
+    </LinearLayout>
+
+</LinearLayout>

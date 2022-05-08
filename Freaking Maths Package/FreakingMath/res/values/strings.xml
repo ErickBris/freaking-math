@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Freaking Maths</string>
+
+    <!-- values for Google Play Leaderboards -->
+    <string name="app_id">337096244488</string>
+    <string name="leaderboard_id">CgkIiPqB5OcJEAIQAQ</string>
+
+    <!-- values for admob -->
+    <string name="banner_id">ca-app-pub-5354131755778514/5028481678</string>
+    <string name="interstitial_id">ca-app-pub-5354131755778514/6505214871</string>
+
+    <!-- string values for app -->
+    <string name="top">Top : </string>
+    <string name= "displayName">Freaking <HTML><b>Maths</b></HTML></string>
+    <string name="last">Last :</string>
+    <string name="gameOver">Game Over</string>
+    <string name="shareSubject">My score is %1$d. Can you beat me?</string>
+    
+    <!-- String values for Pause dialog -->
+    <string name="dialogTitle">Game Paused!</string>
+    <string name="dialogTitle2">Continue?</string>
+    <string name="dialogYes">Yes</string>
+    <string name="dialogNo">No</string>
+    
+    <!-- String values for Rate dialog -->
+    <string name="rate">Rate</string>
+    <string name="rate_dialog_title">Rate Fifteen Puzzle</string>
+    <string name="rate_message">If you like Freaking Maths, please take a moment to rate it. Thanks for your support!</string>
+    <string name="later">Later</string>
+    <string name="no_thanks">No Thanks</string>
+
+</resources>
